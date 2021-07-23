@@ -1,10 +1,16 @@
 <?php
+
 $json_data = file_get_contents("/Users/desrinaputri/Documents/TrainingLaravel/resources/views/films.json");
 $json_array = json_decode($json_data, true); 
 
-  for ( $i=0; $i < count(  $json_array ); $i++ ) 
-          { 
-                echo $json_array[$i]['viewers'] . PHP_EOL;                
-          } 
+$total = 0;
+      foreach ($json_array as $key => $value) {
+                  
+            $total += $value['viewers'];
+
+            echo "$key: $total\n";
+      }
+      echo "<br>";
+      echo "Total Penonton adalah: $total";
 
 ?>
