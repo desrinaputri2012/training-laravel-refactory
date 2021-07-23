@@ -39,4 +39,6 @@ Route::get('/generate_username', 'PagesController@generate_username');
 Route::get('/form_login', 'PagesController@form_login');
 Route::get('/films', 'PagesController@films');
 Route::get('/count_viewers', 'PagesController@count_viewers');
+Route::get('/initial_name', 'PagesController@initial_name');
+Route::get('/count_bills', 'PagesController@count_bills');
 

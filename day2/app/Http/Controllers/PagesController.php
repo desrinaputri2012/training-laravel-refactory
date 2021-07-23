@@ -120,4 +120,14 @@ class PagesController extends Controller
     {
         return view('count_viewers');
     }
+
+    public function initial_name()
+    {
+        return view('initial_name');
+    }
+
+    public function count_bills()
+    {
+        return view('count_bills');
+    }
 }
